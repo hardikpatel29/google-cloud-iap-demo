@@ -6,14 +6,14 @@ terraform {
     }
   }
   backend "gcs" {
-    credentials = "gcloud-terraform.json"
+    credentials = "gcloud.json"
     bucket  = "myterraformstate"
     prefix  = "terraform/state"
   }
 }
 
 provider "google" {
-  credentials = file("terraform-demo.json")
+  credentials = file("gcloud.json")
 
   project = "inspired-truth-397407"
   region  = "us-central1"
