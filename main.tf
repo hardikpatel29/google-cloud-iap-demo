@@ -13,7 +13,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("gcloud-terraform.json")
+  credentials = file("terraform-demo.json")
 
   project = "inspired-truth-397407"
   region  = "us-central1"
